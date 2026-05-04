@@ -1,0 +1,48 @@
+<!DOCTYPE html> <!--AQUI COMENTAMOS QUE ESTA EN NUESTRA PAGINA TIPO HTML VERSION MODERNA -->
+
+<html> <!--SE ABRE UNO AL INICIO Y AL FINAL DE ESTOS Y TODO LO QUE ESTE DENTRO DE ELLOS ESTARA EN LA PAGINA -->
+
+<!--EN GENERAL CASI TODO SE ABRE CON <etiqueta> Y SE CIERRA CON </etiqueta>-->
+<head>
+    <title>Plataforma para tener recomendaciones de peliculas</title> <!--HEAD ES DATA PARA EL NAVEGADOR NO PARA EL USUARIO - AQUI VA TITULOS CSS, CONFIGURACIÓN O META DATOS-->
+    <!--EL TITLE ES EL QUE APARECE EN LA PESTAÑA DEL NAVEGADOR -->
+</head>
+
+<!--EL BODY CONTIENE TODO LO QUE EL USUARIO VA A VER -->
+<body>
+    <h1>Primer intento de web para proyecto en grupo</h1> <!--ESTO H1 ES EL HEADING O TITULO PRINCIPAL  Y VAN SUBIENDO PARA MENORES CATEGORIAS COMO H2 H3 ETC -->
+    
+    <p> A continuacón ingrese el tipo de peliculas que le gustan o que quisiera ver</p> <!--P ES PARA PARRAFOS DE TEXTO -->
+
+    <style>
+     body {
+        text-align: center;
+     }
+    </style>
+
+    <style>
+      body {
+        background-color: gray;
+      }
+    </style>
+
+    
+   <!-- EL METHOD ES COMO SE ENVIAN LOS DATOS POR ENDE AQUI SE MANDAN LOS DATOS DENTRO DE LA URL -->
+   <form action="#" method="get">  <!-- Action es lo que contendra la busqueda y # significa quedarse ahi mismo FORM ES QUIEN CONTIENE LA BUSQUEDA-->      
+         <input type="text" placeholder="Buscar..." name="busqueda">
+         <button type="submit">Buscar</button> <!-- SE CREA UN BOTON CON FORMULARIO PARA ENVIAR -->
+    </form>
+
+    <br>
+
+    <a href="pagina2.html">  <!-- a es como un ancla para ir navegando entre paginas y HREF le dice hacia donde ir -->
+     <img src="Menu.jpg" alt="Peliculas" width="400" > <!--  alt es texto por si hay error - with  es Ancho en pixeles -->
+    </a>
+   
+</body>
+
+</html> <!--E ABRE UNO AL INICIO Y AL FINAL DE ESTOS Y TODO LO QUE ESTE DENTRO DE ELLOS ESTARA EN LA PAGINA -->
+
+
+<!--HTML  ES LA ESTRUCTURA DE LA PAGINA WEB ES UN LENGUAJE DE ESTRUCTURA. LE COMENTO AL NAVEGADOR CQUE MOSTRAR Y COMO -->
+<!--EL ESTILO LO DA CSS Y LA LOGICA JAVASCRIPT-->
