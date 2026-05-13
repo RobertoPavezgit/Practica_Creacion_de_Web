@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title>Página 2 con peliculas </title>
+</head>
+
+<body>
+
+    <h1>Presentación del menú de peliculas</h1>
+
+
+    <style>
+    body {
+        text-align: center;
+    }
+    </style>
+
+    <style>
+      body {
+        background-color: gray;
+     }
+    </style>
+
+    <style>
+    body {
+        text-align: center;
+        color: white;
+
+        background: linear-gradient(
+            -45deg,
+            #1e3c72,
+            #2a5298,
+            #000000,
+            #434343
+        );
+
+        background-size: 400% 400%;
+
+        animation: moverFondo 10s ease infinite;
+    }
+
+    @keyframes moverFondo {
+        0% {
+            background-position: 0% 50%;
+        }
+
+        50% {
+            background-position: 100% 50%;
+        }
+
+        100% {
+            background-position: 0% 50%;
+        }
+    }
+    <style>
+
+/* CONTENEDOR PRINCIPAL DE TODAS LAS IMAGENES */
+.galeria {
+
+    /* FLEXBOX PERMITE ORDENAR ELEMENTOS */
+    display: flex;
+
+    /* CENTRA LAS IMAGENES HORIZONTALMENTE */
+    justify-content: center;
+
+    /* SI NO CABEN EN LA PANTALLA BAJAN A OTRA FILA */
+    flex-wrap: wrap;
+
+    /* ESPACIO ENTRE LAS IMAGENES */
+    gap: 25px;
+
+    /* ESPACIO SUPERIOR */
+    margin-top: 40px;
+}
+
+/* CONFIGURACION DE LAS IMAGENES */
+.galeria img {
+
+    /* ANCHO FIJO */
+    width: 220px;
+
+    /* ALTO FIJO */
+    height: 320px;
+
+    /*
+    AJUSTA LA IMAGEN AL ESPACIO
+    SIN DEFORMARLA
+    */
+    object-fit: cover;
+
+    /* BORDES REDONDEADOS */
+    border-radius: 15px;
+
+    /* SOMBRA NEGRA */
+    box-shadow: 0px 0px 15px black;
+
+    /* HACE SUAVE LA ANIMACION */
+    transition: 0.3s;
+}
+
+/* EFECTO CUANDO EL MOUSE PASA ENCIMA */
+.galeria img:hover {
+
+    /* AGRANDA UN POCO LA IMAGEN */
+    transform: scale(1.05);
+
+    /* CAMBIA LA SOMBRA */
+    box-shadow: 0px 0px 25px red;
+}
+
+</style>
+
+
+<!-- CONTENEDOR DONDE VAN TODAS LAS IMAGENES -->
+<div class="galeria">
+
+    <!-- IMAGEN 1 -->
+    <img src="lethal-weapon.jpg" alt="Peliculas">
+
+    <!-- IMAGEN 2 -->
+    <img src="jeanc.jpg" alt="Peliculas">
+
+    <!-- IMAGEN 3 -->
+    <img src="titan.jpg" alt="Peliculas">
+
+    <!-- IMAGEN 4 -->
+    <img src="rampage.jpg" alt="Peliculas">
+
+    <!-- IMAGEN 5 -->
+    <img src="anillos.jpg" alt="Peliculas">
+
+</div>
+    <p>Te hemos presentado las diferentes peliculas disponibles</p>
+
+    <a href="index.html">
+        <button>Volver</button>
+    </a>
+
+</body>
+
+</html>
